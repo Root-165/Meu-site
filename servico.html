@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&M Tecnologia</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/png" href="img/LOGO.png">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="M&M Tecnologia" class="logo">
+            <!--<h1>M&M Tecnologia</h1> -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">🏠 Início</a></li>
+                <li><a href="servico.html">🛠️ Serviços</a></li>
+                <li><a href="sobre.html">📌 Sobre</a></li>
+                <li><a href="galeria.html">🖼️ Galeria</a></li>
+                <li><a href="contato.html">📞 Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="banner">
+            <h2>LOJA VIRTUAL - M&M Tecnologia</h2>
+          <button class="whatsapp-btn" onclick="abrirWhatsApp()">
+                <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp"> Fale Conosco
+        </button>
+
+
+
+        </section>
+
+        <section id="services" class="services">
+            <h2>Nossos Serviços</h2>
+            <div class="service-list">
+                <div class="service">📄 Impressão de Documentos</div>
+                <div class="service">🎨 Design Gráfico</div>
+                <div class="service">👕 Personalização de Produtos</div>
+                <div class="service">🖨️ Impressão em Lona e Vinil</div>
+            </div>
+        </section>
+    </main>
+                <!-- Produtos Disponíveis -->
+<section id="produtos" class="section">
+        <div class="produtos-container">
+            <div class="produto-card" data-nome="CHAVENA_MAGUICA" data-preco="5000">
+                <p>📦 CHAVENA_MAGUICA</p>
+                <img src="img/CHAVENA_MAGUICA.png" alt="Produto 1">
+                <p>Preço: 5.000 KZ</p>
+                <div class="quantidade-container">
+                    <button class="diminuir">-</button>
+                    <span class="quantidade">1</span>
+                    <button class="aumentar">+</button>
+                </div>
+                <button class="adicionar">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto-card" data-nome="AGENDA PERSONALIZADA" data-preco="7000">
+                <p>📦 AGENDA PERSONALIZADA</p>
+                <img src="img/Aegndas_branca.png" alt="Produto 1">
+                <p>Preço: 7.000 KZ</p>
+                <div class="quantidade-container">
+                    <button class="diminuir">-</button>
+                    <span class="quantidade">1</span>
+                    <button class="aumentar">+</button>
+                </div>
+                <button class="adicionar">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto-card" data-nome="CHAVENA PERSONALIZADA" data-preco="3000">
+                <p>📦 CHAVENA PERSONALIZADA</p>
+                <img src="img/chavena_azul.png" alt="Produto 1">
+                <p>Preço: 3.000 KZ</p>
+                <div class="quantidade-container">
+                    <button class="diminuir">-</button>
+                    <span class="quantidade">1</span>
+                    <button class="aumentar">+</button>
+                </div>
+                <button class="adicionar">Adicionar ao Carrinho</button>
+            </div>
+
+                        <div class="produto-card" data-nome="CAMISA PERSONALIZADA" data-preco="3000">
+                <p>📦 CAMISA PERSONALIZADA</p>
+                <img src="img/camisa_azul.png" alt="Produto 1">
+                <p>Preço: 3.000 KZ</p>
+                <div class="quantidade-container">
+                    <button class="diminuir">-</button>
+                    <span class="quantidade">1</span>
+                    <button class="aumentar">+</button>
+                </div>
+                <button class="adicionar">Adicionar ao Carrinho</button>
+            </div>
+
+                <div class="produto-card" data-nome="PLACAS PERSONALIZADAS" data-preco="3000">
+                <p>📦 PLACAS PERSONALIZADAS</p>
+                <img src="img/placas.jpg" alt="Produto 1">
+                <p>Preço: 3.000 KZ</p>
+                <div class="quantidade-container">
+                    <button class="diminuir">-</button>
+                    <span class="quantidade">1</span>
+                    <button class="aumentar">+</button>
+                </div>
+                <button class="adicionar">Adicionar ao Carrinho</button>
+            </div>
+
+                <div class="produto-card" data-nome="CHAPEUS PERSONALIZADOS" data-preco="3000">
+                <p>📦 CHAPEUS PERSONALIZADOS</p>
+                <img src="img/chapeus.png" alt="Produto 1">
+                <p>Preço: 3.000 KZ</p>
+                <div class="quantidade-container">
+                    <button class="diminuir">-</button>
+                    <span class="quantidade">1</span>
+                    <button class="aumentar">+</button>
+                </div>
+                <button class="adicionar">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+    <!-- Seção do Carrinho -->
+<section id="carrinho" class="carrinho">
+    <h3>🛒 Carrinho</h3>
+    <div class="lista-carrinho"></div>
+    <p class="total">Total: 0 KZ</p>
+    <button class="finalizar">Finalizar Compra</button>
+    <button class="limpar">Limpar Carrinho</button>
+</section>
+
+
+
+</body>
+</html>

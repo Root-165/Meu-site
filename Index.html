@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&M Tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="logo/png" href="logo.png">
+    <script src="formas.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Dashboard Lateral -->
+            <nav class="sidebar">
+                <h2>
+                    <img src="logo.png" alt="Logo" class="logo"> M&M Tecnologia
+                </h2>
+                <ul>
+
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="compras.html">Minhas Compras</a></li>
+                    <li><a href="#config">Configurações</a></li>
+                    <li><a href="#usuarios">👥 Usuários</a></li>
+
+                </ul>
+            </nav>
+
+        <!-- Conteúdo Principal -->
+        <main class="content">
+            <!-- Seção Boas-Vindas -->
+            <section id="home" class="section">
+                <h1 class="mensagem-movimento">Bem-vindo ao 🌟 Bem-vindo à M&M Tecnologia! 🌟</h1>
+                <p class="mensagem-movimento">Desfrute do que nós temos para si!.</p>
+            </section>
+
+<section id="sobre" class="section"> 
+    <div class="sobre-container"> 
+        <h2>🔹 Sobre a M&M Tecnologia</h2>
+        <p>A <strong>M&M Tecnologia</strong> é uma empresa inovadora especializada na personalização e impressão de produtos. Localizada em <strong>Huila, Lubango</strong>, oferecemos serviços de qualidade para clientes individuais e empresas.</p>
+
+        <div class="servicos-sobre">
+            <div class="servico"> 
+                <h3>📄 Impressão de Documentos</h3>
+                <p>Oferecemos impressão rápida e de alta qualidade para seus documentos.</p>
+            </div>
+            <div class="servico">
+                <h3>🎨 Design Gráfico</h3>
+                <p>Criação de <strong>logotipos, portfólios e materiais gráficos</strong> personalizados.</p>
+            </div>
+            <div class="servico">
+                <h3>👕 Personalização</h3>
+                <p>Camisas, canecas, chavenas, coletes e até <strong>matrículas de carros</strong>.</p>
+            </div>
+            <div class="servico">
+                <h3>🖨️ Impressão em Lona e Vinil</h3>
+                <p>Banners e adesivos profissionais para o seu negócio.</p>
+            </div>
+        </div>
+
+        <h3>✅ Nosso Diferencial</h3>
+        <ul class="diferenciais">
+            <li>🚀 <strong>Atendimento rápido</strong> e eficiente.</li>
+            <li>🎨 <strong>Design criativo</strong> e exclusivo.</li>
+            <li>📍 <strong>Localização acessível</strong> no Bairro da Maxiqueira, Lubango.</li>
+            <li>💡 <strong>Soluções personalizadas</strong> para cada cliente.</li>
+        </ul>
+
+        <div class="contato-info">
+            <h3>📩 Entre em Contato</h3>
+            <p>🚀 Transforme suas ideias em realidade com a <strong>M&M Tecnologia</strong>!</p>
+            <button onclick="window.location.href='https://wa.me/244974390811'">📲 Fale Conosco</button>
+        </div>
+    </div>
+</section>
+
+
+            <!-- Nossos Serviços -->
+            <section id="servicos" class="section">
+                <h2>Nossos Serviços</h2>
+                <div class="servicos-container">
+                    <div class="card">📜 Impressão de Documentos</div>
+                    <div class="card">✍️ Criação de Logotipos</div>
+                    <div class="card">🎨 Personalização de Camisas</div>
+                    <div class="card">🖼️ Impressão de Lonas</div>
+                </div>
+            </section>
+
+            <!-- Galeria -->
+           <section id="galeria" class="section">
+                <h2>Galeria</h2>
+
+                <!-- Botões para alternar visualização -->
+                <div class="view-options">
+                    <button onclick="changeView('grid')">🔲 Grade</button>
+                    <button onclick="changeView('list')">📜 Lista</button>
+                </div>
+
+                <!-- Contêiner das imagens -->
+                <div class="galeria-container grid-view">
+                    <img src="img/camisa_azul.png" alt="Imagem 1" onclick="openLightbox(this)">
+                    <img src="img/camisa_azul.png" alt="Imagem 2" onclick="openLightbox(this)">
+                    <img src="img/camisa_azul.png" alt="Imagem 3" onclick="openLightbox(this)">
+                    <img src="img/camisa_azul.png" alt="Imagem 4" onclick="openLightbox(this)">
+                    <img src="img/camisa_azul.png" alt="Imagem 4" onclick="openLightbox(this)">
+                    <img src="img/chavena.png" alt="Imagem 4" onclick="openLightbox(this)">
+                    <img src="img/chavena.png" alt="Imagem 4" onclick="openLightbox(this)">
+                    <img src="img/chavena.png" alt="Imagem 4" onclick="openLightbox(this)">
+                    <img src="img/chavena.png" alt="Imagem 4" onclick="openLightbox(this)">
+                    <img src="img/chavena.png" alt="Imagem 4" onclick="openLightbox(this)">
+
+                </div> 
+
+                <!-- Lightbox (para exibir imagem ampliada) -->
+                <div id="lightbox" class="lightbox">
+                    <span class="close" onclick="closeLightbox()">✖</span>
+                    <img id="lightbox-img">
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-info">
+            <h2>M&M Tecnologia</h2>
+            <p>🚀 Soluções inovadoras para o seu negócio!</p>
+        </div>
+        <div class="footer-contacts">
+            <h3>📞 Contato</h3>
+            <p>📧 Email: <a href="mailto:firmammtecnologia@gmail.com">firmammtecnologia@gmail.com</a></p>
+            <p>📱 Telefone: <a href="tel:+244974390811">+244 974 390 811</a></p>
+            <p>💬 WhatsApp: <a href="https://wa.me/244974390811" target="_blank">Fale Conosco</a></p>
+            <p>📍 Endereço: Rua Maxiqueira</p>
+        </div>
+        <div class="footer-social">
+            <h3>🌍 Redes Sociais</h3>
+            <a href="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0vo1Ledbt9QmwRRCyq5brsG9FabWq8NkgDXx35SRAwbSwAiQFhsJFQtaAAa1tpLFDl%26id%3D61572322119031&show_text=true&width=500" class="social-icon">🔵 Facebook</a>
+            <a href="#" class="social-icon">🐦 Twitter</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 M&M Tecnologia - Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
+
+
+
+</body>
+</html>
+ 
